@@ -1,4 +1,3 @@
-
 list_of_gestures = ["Rock","Scissors","Spock","Lizard","Paper"]
 
 
