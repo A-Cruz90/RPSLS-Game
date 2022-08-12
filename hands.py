@@ -1,4 +1,4 @@
-list_of_gestures = ["Rock","Scissors","Spock","Lizard","Paper"]
+list_of_gestures = ["Rock", "Paper", "Scissors", "Lizard", "Spock"]
 
 
 class Scissors():

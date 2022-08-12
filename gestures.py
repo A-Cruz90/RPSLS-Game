@@ -11,23 +11,18 @@ def run_game ():
     while run_game == True:
         win_counter = 0
         if Rock:
-            win_counter += 1 
-            win_counter= 2
             run_game = False
+            win_counter += 1 
         elif Paper:
-            win_counter += 1 
-            win_counter = 2
             run_game = False
+            win_counter += 1 
         elif Scissors:
-            win_counter += 1 
-            win_counter = 2
             run_game = False
+            win_counter += 1 
         elif Spock:
-            win_counter += 1 
-            win_counter = 2
             run_game = False
+            win_counter += 1 
         elif Lizard:
-            win_counter += 1 
-            win_counter = 2
             run_game = False
+            win_counter += 1 
 
