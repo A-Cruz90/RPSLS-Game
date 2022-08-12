@@ -8,21 +8,14 @@ player_two = Player("Johny")
 
 def run_game ():
     run_game = True
+    player_one.win_counter = 0
+    player_two.win_counter = 0 
     while run_game == True:
-        win_counter = 0
-        if Rock:
+        if player_one.gesture > player_two.gesture:
+            player_one.win_counter += 1 
+        elif player_two.gesture > player_one.gesture:
+            player_two.win_counter += 1 
+        elif player_one.gesture == player_two.gesture :
+            print
+        elif player_one.win_counter or player_two.win_counter == 2:
             run_game = False
-            win_counter += 1 
-        elif Paper:
-            run_game = False
-            win_counter += 1 
-        elif Scissors:
-            run_game = False
-            win_counter += 1 
-        elif Spock:
-            run_game = False
-            win_counter += 1 
-        elif Lizard:
-            run_game = False
-            win_counter += 1 
-
