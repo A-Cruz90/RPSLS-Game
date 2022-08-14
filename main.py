@@ -1,4 +1,4 @@
-from gestures import run_game
+from game import run_game
 
 print("Hello and welcome to RPSLP! Rock, Paper, Scissors, Lizard, Spock. Here are the game rules. ")
 print("Scissors beats Paper, ")
