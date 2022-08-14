@@ -2,10 +2,11 @@ from random import random
 from gestures import Scissors, Spock, Rock, Paper, Lizard
 from gestures import list_of_gestures
 from player import Player
+from ai import AI_bot
 
-player_one = Player("")
-player_two = Player("")
-
+player_one = Player("Joey")
+player_two = Player("Billy")
+ai_bot = AI_bot()
 
 def run_game():
     print("How many players? ")
@@ -24,3 +25,4 @@ def run_game():
             print
         elif player_one.win_counter or player_two.win_counter == 2:
             run_game = False
+
