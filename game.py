@@ -10,9 +10,10 @@ player_two = Player(input("Player two, what is your name: "))
 
 def run_game():
     while True:
-        print(list_of_gestures)
-        player_one.gesture = input("Player one please select your gesture: ")
-        player_two.gesture = input("Player two please select your gesture: ")
+        player_one.select_gesture()
+        print(player_one.gesture)
+        player_two.select_gesture()
+        print(player_two.gesture)
 
         if player_one.gesture == player_two.gesture :
             print(f"Both players chose {player_one.gesture}. Therefore it's a tie! ")
