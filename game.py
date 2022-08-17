@@ -11,9 +11,9 @@ player_two = Player(input("Player two, what is your name: "))
 def run_game():
     while True:
         player_one.select_gesture()
-        print(player_one.gesture)
         player_two.select_gesture()
-        print(player_two.gesture)
+        print(f'{player_one.name} threw {player_one.gesture}! ')
+        print(f'{player_two.name} threw {player_two.gesture}! ')
 
         if player_one.gesture == player_two.gesture :
             print(f"Both players chose {player_one.gesture}. Therefore it's a tie! ")
