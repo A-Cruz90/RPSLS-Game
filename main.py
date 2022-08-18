@@ -13,4 +13,3 @@ from game import run_game
 # print("and lastly Spock vaporizes Rock. Good Luck. ")
 
 run_game()
-

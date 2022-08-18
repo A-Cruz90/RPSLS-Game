@@ -17,12 +17,35 @@ def run_game():
 
         if player_one.gesture == player_two.gesture :
             print(f"Both players chose {player_one.gesture}. Therefore it's a tie! ")
-        elif player_one.gesture > player_two.gesture:
-            print(f'{player_one.gesture} beats {player_two.gesture}! ')
+        elif player_one.gesture == Rock and player_two.gesture == Scissors :
+            print(f'{player_one.gesture} smashes {player_two.gesture}! ')
             player_one.win_counter += 1 
-        elif player_two.gesture > player_one.gesture:
-            print(f'{player_two.gesture} beats {player_one.gesture}! ')
-            player_two.win_counter += 1 
-        elif player_one.win_counter or player_two.win_counter == 2:
-            break
+        elif player_one.gesture == Rock and player_two.gesture == Lizard :
+            print(f'{player_one.gesture} crushes {player_two.gesture}! ')
+            player_one.win_counter += 1
+        elif player_one.gesture == Paper and player_two.getsure == Rock :
+            print(f'{player_one.gesture} covers {player_two.gesture}! ')
+            player_one.win_counter += 1
+        elif player_one.gesture == Paper and player_two.gesture == Spock:
+            print(f'{player_one.gesture} disproves {player_two.gesture}! ')
+            player_one.win_counter += 1
+        elif player_one.gesture == Scissors and player_two.gesture == Paper :
+            print(f'{player_one.gesture} cuts {player_two.gesture}! ')
+            player_one.win_counter += 1
+        elif player_one.gesture == Scissors and player_two.gesture == Lizard :
+            print(f'{player_one.gesture} dicapitates {player_two.gesture}! ')
+            player_one.win_counter += 1
+        elif player_one.gesture == Lizard and player_two.gesture == Spock :
+            print(f'{player_one.gesture} poisons {player_two.gesture}! ')
+            player_one.win_counter += 1
+        elif player_one.gesture == Lizard and player_two.gesture == Paper :
+            print(f'{player_one.gesture} eats {player_two.gesture}! ')
+            player_one.win_counter += 1
+        elif player_one.gesture == Spock and player_two.gesture == Scissors :
+            print(f'{player_one.gesture} smashes {player_two.gesture}! ')
+            player_one.win_counter += 1
+        elif player_one.gesture == Spock and player_two.gesture == Rock :
+            print(f'{player_one.gesture} vaporizes {player_two.gesture}! ')
+            player_one.win_counter += 1
+
 
