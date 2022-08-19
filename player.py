@@ -3,8 +3,7 @@ import random
 
 
 class Player:
-    def __init__(self,name):
-        self.name = '' 
+    def __init__(self):
         self.gesture = ''
         self.win_counter = 0
         self.list_of_getsures = ["Rock", "Paper", "Scissors", "Lizard", "Spock"]
@@ -30,3 +29,7 @@ class Player:
             self.gesture = self.list_of_getsures[4] 
         else:
             print(f'You have chosen a non valid option plesae try again!: ')
+        
+
+
+

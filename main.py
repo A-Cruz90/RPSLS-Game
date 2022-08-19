@@ -1,4 +1,5 @@
 from game import run_game
+from game import Game
 
 # print("Hello and welcome to RPSLP! Rock, Paper, Scissors, Lizard, Spock. Here are the game rules. ")
 # print("Scissors beats Paper, ")
@@ -13,3 +14,4 @@ from game import run_game
 # print("and lastly Spock vaporizes Rock. Good Luck. ")
 
 run_game()
+
