@@ -10,7 +10,9 @@ class Game():
         super().__init__
         self.player_one = ''
         self.player_two = ''
-       
+        self.choose_player()
+        self.run_game()
+
     def choose_player(self):
         user_input = input("How many players? ")
         if user_input == '1':
@@ -19,11 +21,24 @@ class Game():
         elif user_input == '2':
             self.player_one = Human(input('Player, What is your name?: '))
             self.player_two = Human(input('Player, What is your name?: '))
-
+        elif user_input == '0':
+            self.player_one = AI_bot()
+            self.player_two = AI_bot()
+        else :
+            input(f'Please make the proper selection. 0 , 1, or 2 ? : ')
+    
 
 
     def run_game(self):
         while True:
+            if self.player_two.win_counter == 2:
+                print(f'Your winner for this game {self.player_two.name}')
+                break
+
+            elif self.player_one.win_counter == 2:
+                print(f'Your winner for this game {self.player_one.name}')   
+                break
+            
             self.player_one.select_gesture()
             self.player_two.select_gesture()
             print(f'{self.player_one.name} threw {self.player_one.gesture}! ')
@@ -39,7 +54,7 @@ class Game():
                 print(f'{self.player_one.gesture} crushes {self.player_two.gesture}! ')
                 print(f'{self.player_one.name} WINS!!!')
                 self.player_one.win_counter += 1
-            elif self.player_one.gesture == 'Paper' and self.player_two.getsure == 'Rock' :
+            elif self.player_one.gesture == 'Paper' and self.player_two.gesture == 'Rock' :
                 print(f'{self.player_one.gesture} covers {self.player_two.gesture}! ')
                 print(f'{self.player_one.name} WINS!!!')
                 self.player_one.win_counter += 1
