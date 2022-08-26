@@ -20,7 +20,7 @@ class Player:
         if user_input == '0':
             self.gesture = self.list_of_getsures[0]        
         elif user_input == '1':
-            self.getsure = self.list_of_getsures[1]            
+            self.gesture = self.list_of_getsures[1]            
         elif user_input == '2':
             self.gesture = self.list_of_getsures[2]            
         elif user_input == '3':
